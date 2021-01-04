@@ -1,0 +1,64 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px;
+  z-index: 5;
+  background-color: rgb(219, 216, 216);
+  border-radius: 20px;
+  padding: 40px 0;
+  margin: 50px auto 0;
+  text-align: center;
+  transition: all 0.3s ease-in-out
+}
+
+.modal__avatar {
+  margin: 10px auto 30px;
+}
+
+.modal__input-label {
+  font-weight: 600;
+  font-size: large;
+  display: block;
+  margin: 15px 0 10px;
+}
+
+.modal__input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 60%;
+  outline-width: 0;
+  border: none;
+  font-size: medium;
+}
+
+.modal__error-message {
+  color: rgb(204, 10, 10);
+  font-weight: 600;
+}
+
+.modalAnimation-enter {
+  opacity: 0;
+  margin-top: -100vh;
+  visibility: hidden;
+}
+
+.modalAnimation-enter-active {
+  opacity: 1;
+  margin-top: 50px;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.modalAnimation-exit {
+  opacity: 1;
+  margin-top: 50px;
+  visibility: visible;
+}
+
+.modalAnimation-exit-active {
+  opacity: 0;
+  margin-top: -100vh;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}

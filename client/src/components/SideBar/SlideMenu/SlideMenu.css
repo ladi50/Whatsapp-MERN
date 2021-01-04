@@ -1,0 +1,30 @@
+.slideMenu-div {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: gray;
+  z-index: 1;
+}
+
+.slideMenu-enter {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.slideMenu-enter-active {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.slideMenu-exit {
+  visibility: visible;
+  opacity: 1;
+}
+
+.slideMenu-exit-active {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
